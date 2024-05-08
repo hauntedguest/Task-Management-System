@@ -70,30 +70,33 @@ function Register({ isAuthenticated, setIsAuthenticated }) {
             type="email"
             placeholder="Enter Your Email"
             value={email}
+            id="email"
             onChange={(e) => setEmail(e.target.value)}
           />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Group className="mb-3" controlId="formBasicPassword" >
           <Form.Label>Phone Number</Form.Label>
           <Form.Control
             type="number"
             placeholder="Your Phone Number"
+            id="phone"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
           />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Group className="mb-3" controlId="formBasicPassword" >
           <Form.Label>Password</Form.Label>
           <Form.Control
             type="password"
             placeholder="Password"
+            id="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Group className="mb-3" controlId="formBasicPassword" >
           <Form.Label>Avatar</Form.Label>
-          <Form.Control type="file" onChange={avatarHandler} />
+          <Form.Control id= "img" type="file" onChange={avatarHandler} />
         </Form.Group>
         <Form.Group className="text-center">
           <Form.Label>
